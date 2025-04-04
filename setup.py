@@ -13,6 +13,8 @@ if "sdist" in sys.argv[1:]:
             print("Pandoc command for generating README.rst is required",
                   file=sys.stderr)
             sys.exit(1)
+
+if os.path.isfile("README.rst"):
     long_desc=open("README.rst",encoding="utf-8").read()
 else:
     long_desc=""
