@@ -28,7 +28,7 @@ kmp_util_module = Extension(
 # Setup script
 setup(
     name="kmp_util",
-    version="1.0",
+    version="1.0.1",
     description="A module that provides KMP-based search for strings and bytes.",
     long_description=long_desc,
     author="qfcy",
