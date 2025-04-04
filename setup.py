@@ -22,14 +22,15 @@ else:
 # Define the C extension
 kmp_util_module = Extension(
     "kmp_util",
-    sources=["kmp_util.c"],
+    sources=["kmp_util.cpp"],
+    language="c++",
 )
 
 # Setup script
 setup(
     name="kmp_util",
-    version="1.0.1",
-    description="A module that provides KMP-based search for strings and bytes.",
+    version="1.0.2",
+    description="A module providing KMP-based search for strings and bytes.",
     long_description=long_desc,
     author="qfcy",
     author_email="3076711200@qq.com",
